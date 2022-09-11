@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildin'</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+</head>
+<!-- navbar goes here -->
+<nav class="bg-gradient-to-b from-black via-black w-full fixed h-1/6 navbar">
+  <div class="w-full mx-auto px-4">
+    <div class="flex justify-between">
+
+      <div class="flex space-x-4">
+        <div>
+          <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+            <img src="img/logo.png" alt="logo" class="h-10 w-20 mr-1 flex left-0">
+          </a>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-1">
+        <a href="javascript:scroll('home');" class="py-5 px-3 hover:overline decoration-yellow-600 decoration-4 hover:font-bold">Home</a>
+        <a href="javascript:scroll('gallery');" class="py-5 px-3 hover:overline decoration-yellow-600 decoration-4 hover:font-bold">Gallery</a>
+        <a href="javascript:scroll('shop');" class="py-5 px-3 hover:overline decoration-yellow-600 decoration-4 hover:font-bold">Shop</a>
+        <a href="javascript:scroll('blog');" class="py-5 px-3 hover:overline decoration-yellow-600 decoration-4 hover:font-bold">Blog</a>
+        <a href="javascript:scroll('contact');" class="py-5 px-3 hover:overline decoration-yellow-600 decoration-4 hover:font-bold">Contact Us</a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button class="mobile-menu-button" onclick="toggle_visibility('mobile-menu')">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu w-1/2 hidden bg-black" id="mobile-menu">
+    <a href="javascript:scroll('home');" class="block py-2 px-4 text-lg" onlick="">Home</a>
+    <a href="javascript:scroll('gallery');" class="block py-2 px-4 text-lg">Gallery</a>
+    <a href="javascript:scroll('shop');" class="block py-2 px-4 text-lg">Shop</a>
+    <a href="javascript:scroll('blog');" class="block py-2 px-4 text-lg">Blog</a>
+    <a href="javascript:scroll('contact');" class="block py-2 px-4 text-lg">Contact Us</a>
+  </div>
+</nav>
+<body class="bg-black text-white">
+<div class="py-32 homepage" id="home">
+  <h2 class="text-shadow font-extrabold text-4xl md:text-7xl text-center md:text-left p-10 hero-title">The Fusion of Visual <br>and Performance Art</h2>
+  <p class="text-shadow text-xl w-full md:w-1/3 text-center md:text-left p-5 md:p-10 hero-text">Wildin' is a show that is made by artists and for artists that are coming from parallel genres, but having their own individual flavour. We wish to present visual and performing arts through a new perspective and to give budding artists a platform to showcase their talent, in front of a live audience.
+  <br>
+  <br>
+  <button class="bg-yellow-600 hover:bg-yellow-900 text-white py-2 px-4 rounded text-center" onclick="window.location.href='https://www.instagram.com/wildin.co_/'">
+      Know More
+  </button>
+  </p>
+  <img class="hero-image flex invisible md:visible" src="img/hero.png" />
+  <br>
+  <br>
+</div>
+<!-- Homepage Ends Here -->
+
+<!-- Gallery Starts Here-->
+<div class="gallery-wrapper" id="gallery">
+    <h2 class="text-shadow font-extrabold text-6xl md:text-7xl text-center md:text-left p-10">Gallery.</h2>
+</div>
+<div class="flex overflow-x-auto space-x-8 gallery-images-wrapper">
+  <section class="flex-shrink-0 ">
+    <span><img src="img/gallery/1.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
+  </section>
+  <section class="flex-shrink-0 ">
+    <span><img src="img/gallery/2.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
+  </section>
+  <section class="flex-shrink-0 ">
+    <span><img src="img/gallery/3.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
+    
+  </section>
+  <section class="flex-shrink-0 ">
+    <span><img src="img/gallery/4.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
+    
+  </section>
+  <section class="flex-shrink-0 ">
+    <span><img src="img/gallery/5.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
+    
+  </section>
+  <section class="flex-shrink-0 ">
+    <span><img src="img/gallery/6.jpg" class="bg-purple-200 gallery-image " alt="" /></span>
+</section>
+</div>
+<!-- Gallery Ends Here -->
+
+<!-- Shop Starts Here -->
+  <div class="shop-wrapper" id="shop">
+    <h2 class="text-shadow font-extrabold text-6xl md:text-7xl text-center md:text-left p-10">Shop.</h2>
+    <div class="flex flex-wrap justify-between">
+      <div class="shop-item-wrapper px-2">
+        <h3 class="font-extrabold text-2xl md:text-3xl p-5 text-center">Coming Soon!</h3>
+        <p class="text-center">A small description</p>
+        <img src="img/shop/0001.png" class="shop-image" alt="" />
+      </div>
+      <div class="shop-item-wrapper px-2">
+        <h3 class="font-extrabold text-2xl md:text-3xl p-5 text-center">Coming Soon!</h3>
+        <p class="text-center">A small description</p>
+        <img src="img/shop/0001.png" class="shop-image" alt="" />
+      </div>
+    <div class="shop-item-wrapper px-2">
+      <h3 class="font-extrabold text-2xl md:text-3xl p-5 text-center">Coming Soon!</h3>
+      <p class="text-center">A small description</p>
+      <img src="img/shop/0001.png" class="shop-image" alt="" />
+    </div>
+  <div class="shop-item-wrapper px-2">
+    <h3 class="font-extrabold text-2xl md:text-3xl p-5 text-center">Coming Soon!</h3>
+    <p class="text-center">A small description</p>
+    <img src="img/shop/0001.png" class="shop-image" alt="" />
+  </div>
+
+    </div>
+  </div>
+<!-- Shop Ends Here-->
+<!-- Artists Starts Here -->
+<div class="artists-wrapper">
+  <h2 class="text-shadow font-extrabold text-6xl md:text-7xl text-center md:text-left p-10">Meet The Founder.</h2>
+  <div class="artist-portfolio-wrapper">
+    <div class="md:flex md:inline-flex">
+      <div class="artist-left-wrapper w-full md:w-1/3 grid place-items-center">
+        <h3 class="artist-name text-center font-extrabold text-4xl md:text-3xl md:py-10">Stitch</h3>
+        <!-- <p class="artist-description text-center p-5 md:p-0">A small description</p> -->
+        <img src="img/stitch.jpeg" class="artist-image " alt="" />
+        <!-- <div class="artist-socials px-5 py-10">
+          <img src="img/artist/facebook.png" class="artist-facebook flex inline-flex" alt="" />
+          <img src="img/artist/youtube.png" class="artist-youtube flex inline-flex" alt="" />
+          <img src="img/artist/twitter.png" class="artist-twitter flex inline-flex" alt="" />  
+        </div> -->
+    </div>
+      <p class="artist-blog flex inline-flex text-justify">
+        A person with strong experience in streaming strategy and promotions. Working with a lot of influencers and curators across streaming platforms. Working with artists, labels, and managers An individual with an unresting passion for music and artist development, whose goal is to bring fans and the industry together. Has a vast music industry network with a couple of years of operating professionalism. I'm a little bit of pop and a whole lot of Indian HipHop. Started my own event management firm 'WILDIN' last year, and curated two successful interdisciplinary art shows.       
+      </p>
+    </div>
+  </div>
+  <br>
+<!-- Artists Ends Here -->
+<!-- Blog Starts Here -->
+<div class="blog-wrapper" id="blog">
+  <h2 class="text-shadow font-extrabold text-6xl md:text-7xl text-center md:text-left p-10">Blog.</h2>
+  <div class="blog-posts-wrapper">
+    <br>
+    <div class="blog-post-wrapper">
+      <div class="blog-post-content-wrapper">
+        <h3 class="blog-post-title font-extrabold text-2xl md:text-3xl">Wildin' 3.0</h3>
+        <p class="blog-post-content text-justify">
+          The third installment of Wildin was a milestone event as it is one of the biggest Hip-Hop events to happen in Delhi post-lockdown. 
+
+As the world opens up and starts getting back to the old groove, events and artists have returned to take back the nights. Wildin was an attempt to do the same and was a successful one too as more than 250 people showed up. Almost 90% of the tickets were sold in the early-bird booking phase and little to no booking slots were available on the day of the event.
+
+The audience that turned up was impressive as well, given how versatile they were. The event hosted rap performances, rap battles, beatboxing battles, and pop-up stalls. Artists from Mumbai, Delhi, and Jamshedpur came together to make this event an absolute blast.
+
+From the breathtaking rap battles to amazing performances and beautiful art that was up for sale, this is probably the first time in Delhi where such different artists joined hands to create this one-of-a-kind experience. While the stalls has people buying art, getting tattoos, and clicking photos, the rap performances had them jumping and grooving . Young kings of Indian Hip-Hop like Gravity, Siege, Farhan, and D-cypher owned the night were their on-stage presence and songs that left the audience wanting for more. On the other hand, visual artists like Sharon, Ramaa, and Vishaka had people lining up at their stalls. 
+
+The beatboxing and rap battles were a whole different story in themselves. The audience went from focusing intensely on the build-ups to screaming and cheering on drops and punchlines. Rapture, the battle rap veteran from Mumbai showed how experience and delivery can woo the audience regardless of the city you step in. Dzire, the battle rap prodigy from Jamshedpur was the highlight of the event as she made her mark in the capital city and proved that she is a force to be reckoned with.
+
+Delhi artists also held their own at the event as acts like Pho, Oof, YKSGOD, and Shinigxmi had people singing along to their beats. The organizer of this event, Abhijeet Singh, popularly known as Stitch is inspired and excited more than ever to curate more such events and offer new and upcoming artists a stage that they deserve. This year, Wildin is planning to do events in other cities such as Pune, Bangalore, and Mumbai. commodo. Duis eleifend nulla at elit aliquet, vitae dignissim tellus pharetra. Duis eget molestie sem. Donec quis laoreet purus, nec facilisis erat. In ullamcorper lacinia libero non volutpat. Mauris porta suscipit sapien quis congue. Maecenas urna quam, commodo ut lacus non, luctus auctor lorem. Ut eu var
+        </p>
+      </div>
+    </div>
+    <br>
+
+</div>
+<!-- Blog Ends Here -->
+<!-- Contact Starts Here -->
+<div class="contact-wrapper" id="contact">
+  <h2 class="text-shadow font-extrabold text-6xl md:text-7xl text-center md:text-left p-10">Contact Us.</h2>
+  <h3 class="text-shadow font-bold text-3xl md:text-5xl text-center md:text-left p-10 flex inline-flex">Stitch</h3>
+  <h3 class="text-shadow font-thin text-3xl md:text-5xl text-center md:text-left p-10 flex inline-flex">connectwildin@gmail.com</h3>
+  <br>
+  <h3 class="text-shadow font-thin text-3xl md:text-5xl text-center md:text-left p-10 flex inline-flex">+91 70428 86708</h3>
+  <br>
+  <div class="p-10">
+    <img src="img/artist/facebook.png" class="artist-facebook flex inline-flex" alt="" />
+    <img src="img/artist/youtube.png" class="artist-youtube flex inline-flex" alt="" />
+    <img src="img/artist/twitter.png" class="artist-twitter flex inline-flex" alt="" /> 
+  </div>
+</div>
+<!-- Contact Ends Here -->
+<!-- Newsletter Starts Here-->
+<!-- <div class="newsletter-wrapper invisible md:visible">
+  <h3 class="text-shadow font-bold text-3xl md:text-5xl text-center md:text-left p-10 flex inline-flex">Subscribe to our newsletter</h3>
+  <br>
+  <div class="md:w-md lg:w-lg xl:w-xl">
+    <div class="md:flex mb-4 md:mb-2">
+      <div class="form-outline form-white flex-fill md:mr-1">
+        <input type="text" class="form-control block md:w-full w-1/3 px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="formControlEmail0" placeholder="Enter your email" />
+      </div>
+          <a href="#!" type="button" class="flex inline-flex inline-block px-7 py-3 bg-black text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-yellow-700 hover:shadow-lg focus:bg-yellow-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-800 active:shadow-lg transition duration-150 ease-in-out md:ml-2 border-solid border-2 border-white notify-button">Notify me</a>
+    </div>
+</div> -->
+<!-- Newsletter Ends Here -->
+<style>
+.navbar{
+  z-index: 10;
+}
+.mobile-menu {
+    position: absolute;
+    right:0;
+    top: 0;
+    padding-top: 10vh;
+    z-index: -1;
+    height: 100vh;
+}
+.hero-image {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+    height: 100%;
+}
+.text-shadow{
+    text-shadow: 5px 5px 20px black;
+}
+.gallery-image{
+    width: 40rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+.arrow{
+  height: 8vh;
+  padding: 1vh;
+}
+.arrow-wrapper{
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.gallery-wrapper{
+  position: relative;
+  top: 10vh;
+  z-index: -1;
+}
+.gallery-images-wrapper{
+  position: relative;
+  /* z-index: -1; */
+  top: 10vh;
+}
+.shop-item-wrapper{
+  position: relative;
+  z-index: -1;
+  height: 50vh;
+  border: 3px solid white;
+  border-radius: 2vh;
+  margin: 4vh;
+}
+.shop-item-wrapper-wrapper{
+  padding: 3vw;
+}
+.shop-wrapper{
+  position: relative;
+  top: 10vh;
+  z-index: -1;
+}
+.shop-image{
+  height: 70%;
+  width: 100%;
+  position:relative;
+}
+.artists-wrapper{
+  position: relative;
+  top: 10vh;
+  z-index: -1;
+}
+.artist-portfolio-wrapper{
+  position: relative;
+  left: 2.5vw;
+  z-index: -1;
+  width: 95vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+.artist-portfolio-wrapper-2{
+  position: relative;
+  left: 2.5vw;
+  z-index: -1;
+  width: 95vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+.artist-left-wrapper{
+  position: relative;
+  top: 0;
+  padding: auto;
+  z-index: -1;
+}
+.artist-image{
+  position: relative;
+  z-index: -1;
+  /* top: 5rem; */
+  left: 1vw;
+  height: 20rem;
+  border-radius: 1rem;
+}
+.artist-facebook{
+  position: relative;
+  z-index: -1;
+  height: 2rem;
+}
+.artist-youtube{
+  position: relative;
+  z-index: -1;
+  height: 2rem;
+}
+.artist-twitter{
+  position: relative;
+  z-index: -1;
+  height: 2rem;
+}
+.artist-blog{
+  position: relative;
+  z-index: -1;
+  padding: 10vh;
+  width: 100%;
+}
+.contact-wrapper{
+  position: relative;
+  top: 10vh;
+  height: 100vh;
+  z-index: -1;
+}
+.newsletter-wrapper{
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+}
+.form-outline{
+  position: relative;
+  left: 5vw;
+}
+.notify-button{
+  position: relative;
+  left: 5vw;
+}
+.blog-wrapper{
+  position: relative;
+  top: 20vh;
+  height: 100vh;
+  z-index: -1;
+}
+.blog-post-content-wrapper{
+  position: relative;
+  left: 2.5vw;
+  z-index: -1;
+  padding: 2rem;
+  width: 95vw;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+</style>
+</body>
+</html>
